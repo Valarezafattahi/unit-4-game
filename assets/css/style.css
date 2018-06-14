@@ -10,8 +10,14 @@ h2 {
     font-size: 1.7em;
 }
 
-p {
+p, footer{
     font-family: 'VT323', monospace;
     font-size: 1.5em;
 }
 
+.footer {
+    padding: 20px;
+    color: aliceblue;
+    background-color: #563d7c;
+    border: 1.5px solid black;
+}

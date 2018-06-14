@@ -15,7 +15,6 @@
     <!-- stylesheet -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <!-- JS link -->
-    <script src="assets/javascript/game.js"></script>
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
@@ -38,18 +37,18 @@
 
         <ul class="list-group">
             <li class="list-group-item list-group-item-primary">Random Number:
-                <h2 id="rn"></h2>
+                <h2 id="rn" class="text-center"></h2>
             </li>
             <li class="list-group-item list-group-item-warning">Player Score:
-                <h2 id="playerScore" class="text-center"></h3>
+                <h2 id="pS" class="text-center"></h3>
             </li>
 
 
             <li class="list-group-item list-group-item-success">Wins:
-                <h2 id="wins" class="text-center"></h3>
+                <h2 id="wins" class="text-center">0</h3>
             </li>
-            <li class="list-group-item list-group-item-dark">Lose:
-                <h2 id="lose" class="text-center"></h3>
+            <li class="list-group-item list-group-item-dark">Losses:
+                <h2 id="lose" class="text-center">0</h3>
             </li>
         </ul>
     </div>
@@ -62,7 +61,12 @@
     </div>
 
     </div>
-
+    <script src="assets/javascript/game.js"></script>
+    <container>
+        <footer class="footer text-center">
+            Copyright &copy;2018, Valareza Fattahi
+        </footer>
+    </container>
 </body>
 
 </html>
