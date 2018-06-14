@@ -1,0 +1,17 @@
+body {
+    background-image: url("../images/background.png");
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+p {
+    font-family: 'VT323', monospace;
+    font-size: 1.5em;
+}
+
