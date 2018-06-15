@@ -2,6 +2,10 @@ body {
     background-image: url("../images/background.png");
 }
 
+#header {
+    border: 1px solid black;
+}
+
 h1{
     font-family: 'Press Start 2P', cursive;
 }
@@ -20,4 +24,8 @@ p, footer{
     color: aliceblue;
     background-color: #563d7c;
     border: 1.5px solid black;
+}
+
+cr1:active {
+    color: aqua;
 }

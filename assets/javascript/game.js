@@ -10,6 +10,7 @@
 function randomNumber (min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
+
 var randomNum = randomNumber(19,120);
 console.log (randomNum);
 $("#rn").html(randomNum);
@@ -23,6 +24,27 @@ var cr4= 1+ Math.floor(Math.random()*12);
 $("#pS").html(playerScore);
 $("wins").html(wins);
 $("#lose").html(losses);
+console.log(cr1, cr2, cr3, cr4);
+// preventing to have any two crystals with the same value
+    if (cr1===cr2 || cr1===cr3 || cr1===cr4 ) { 
+        var cr1= 1+ Math.floor(Math.random()*12);
+    }   
+    else if (cr2===cr3 || cr2===cr4) {
+        var cr2= 1+ Math.floor(Math.random()*12);
+    }   
+    else if (cr3===cr4) {
+        var cr3= 1+ Math.floor(Math.random()*12);
+    } 
+    if (cr1===cr2 || cr1===cr3 || cr1===cr4 ) { 
+        var cr1= 1+ Math.floor(Math.random()*12);
+    }   
+    else if (cr2===cr3 || cr2===cr4) {
+        var cr2= 1+ Math.floor(Math.random()*12);
+    }   
+    else if (cr3===cr4) {
+        var cr3= 1+ Math.floor(Math.random()*12);
+    }
+
 console.log(cr1, cr2, cr3, cr4);
 
 // reset var
