@@ -17,16 +17,34 @@ $("#rn").html(randomNum);
 var playerScore= 0;
 var wins= 0;
 var losses= 0;
-var cr1= 1+ Math.floor(Math.random()*12);
-var cr2= 1+ Math.floor(Math.random()*12);
-var cr3= 1+ Math.floor(Math.random()*12);
-var cr4= 1+ Math.floor(Math.random()*12);
+var cr1= 0;
+var cr2= 0;
+var cr3= 0;
+var cr4= 0;
+var crystalArray = [];
 $("#pS").html(playerScore);
 $("wins").html(wins);
 $("#lose").html(losses);
 console.log(cr1, cr2, cr3, cr4);
 // preventing to have any two crystals with the same value
-    if (cr1===cr2 || cr1===cr3 || cr1===cr4 ) { 
+
+    for (var i = 0; i < 4; i++) {
+        var tempCr = 1 + Math.floor(Math.random() * 12);
+        console.log("original number: " + tempCr);
+        while (crystalArray.indexOf(tempCr) != -1) {
+            tempCr = 1 + Math.floor(Math.random() * 12);
+            console.log("new number: " + tempCr);
+        } 
+        crystalArray.push(tempCr);
+    }
+
+cr1 = crystalArray[0];
+cr2 = crystalArray[1];
+cr3 = crystalArray[2];
+cr4 = crystalArray[3];
+
+
+/*     if (cr1===cr2 || cr1===cr3 || cr1===cr4 ) { 
         var cr1= 1+ Math.floor(Math.random()*12);
     }   
     else if (cr2===cr3 || cr2===cr4) {
@@ -35,6 +53,7 @@ console.log(cr1, cr2, cr3, cr4);
     else if (cr3===cr4) {
         var cr3= 1+ Math.floor(Math.random()*12);
     } 
+
     if (cr1===cr2 || cr1===cr3 || cr1===cr4 ) { 
         var cr1= 1+ Math.floor(Math.random()*12);
     }   
@@ -43,7 +62,7 @@ console.log(cr1, cr2, cr3, cr4);
     }   
     else if (cr3===cr4) {
         var cr3= 1+ Math.floor(Math.random()*12);
-    }
+    } */
 
 console.log(cr1, cr2, cr3, cr4);
 
