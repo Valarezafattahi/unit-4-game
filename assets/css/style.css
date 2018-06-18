@@ -3,7 +3,7 @@ body {
 }
 
 #header {
-    border: 1px solid black;
+    border: 10px ridge #d9abff;
 }
 
 h1{
@@ -19,13 +19,18 @@ p, footer{
     font-size: 1.5em;
 }
 
-.footer {
+#footer {
     padding: 20px;
     color: aliceblue;
     background-color: #563d7c;
     border: 1.5px solid black;
 }
 
-cr1:active {
+#cr1:active {
     color: aqua;
+}
+
+.list-group {
+    font-family:'Press Start 2P';
+    text-align: center;
 }
